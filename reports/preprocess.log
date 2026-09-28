@@ -1,0 +1,92 @@
+2026-09-12 14:28:43,396 | INFO | Loading raw file: C:\API_Assignment\telco-churn\data\raw\Telco_customer_churn.xlsx
+2026-09-12 14:28:45,304 | INFO | Loaded shape: 7043 rows x 33 columns
+2026-09-12 14:28:45,305 | INFO | Data types:
+2026-09-12 14:28:45,305 | INFO |   CustomerID             str
+2026-09-12 14:28:45,305 | INFO |   Count                  int64
+2026-09-12 14:28:45,306 | INFO |   Country                str
+2026-09-12 14:28:45,306 | INFO |   State                  str
+2026-09-12 14:28:45,306 | INFO |   City                   str
+2026-09-12 14:28:45,307 | INFO |   Zip Code               int64
+2026-09-12 14:28:45,312 | INFO |   Lat Long               str
+2026-09-12 14:28:45,312 | INFO |   Latitude               float64
+2026-09-12 14:28:45,313 | INFO |   Longitude              float64
+2026-09-12 14:28:45,313 | INFO |   Gender                 str
+2026-09-12 14:28:45,313 | INFO |   Senior Citizen         str
+2026-09-12 14:28:45,313 | INFO |   Partner                str
+2026-09-12 14:28:45,313 | INFO |   Dependents             str
+2026-09-12 14:28:45,314 | INFO |   Tenure Months          int64
+2026-09-12 14:28:45,314 | INFO |   Phone Service          str
+2026-09-12 14:28:45,314 | INFO |   Multiple Lines         str
+2026-09-12 14:28:45,314 | INFO |   Internet Service       str
+2026-09-12 14:28:45,314 | INFO |   Online Security        str
+2026-09-12 14:28:45,314 | INFO |   Online Backup          str
+2026-09-12 14:28:45,314 | INFO |   Device Protection      str
+2026-09-12 14:28:45,315 | INFO |   Tech Support           str
+2026-09-12 14:28:45,315 | INFO |   Streaming TV           str
+2026-09-12 14:28:45,315 | INFO |   Streaming Movies       str
+2026-09-12 14:28:45,315 | INFO |   Contract               str
+2026-09-12 14:28:45,315 | INFO |   Paperless Billing      str
+2026-09-12 14:28:45,315 | INFO |   Payment Method         str
+2026-09-12 14:28:45,315 | INFO |   Monthly Charges        float64
+2026-09-12 14:28:45,316 | INFO |   Total Charges          object
+2026-09-12 14:28:45,316 | INFO |   Churn Label            str
+2026-09-12 14:28:45,316 | INFO |   Churn Value            int64
+2026-09-12 14:28:45,316 | INFO |   Churn Score            int64
+2026-09-12 14:28:45,316 | INFO |   CLTV                   int64
+2026-09-12 14:28:45,317 | INFO |   Churn Reason           str
+2026-09-12 14:28:45,337 | INFO | Summary statistics (numeric columns):
+                  count          mean          std           min           25%           50%           75%           max  missing
+Count            7043.0      1.000000     0.000000      1.000000      1.000000      1.000000      1.000000      1.000000        0
+Zip Code         7043.0  93521.964646  1865.794555  90001.000000  92102.000000  93552.000000  95351.000000  96161.000000        0
+Latitude         7043.0     36.282441     2.455723     32.555828     34.030915     36.391777     38.224869     41.962127        0
+Longitude        7043.0   -119.798880     2.157889   -124.301372   -121.815412   -119.730885   -118.043237   -114.192901        0
+Tenure Months    7043.0     32.371149    24.559481      0.000000      9.000000     29.000000     55.000000     72.000000        0
+Monthly Charges  7043.0     64.761692    30.090047     18.250000     35.500000     70.350000     89.850000    118.750000        0
+Churn Value      7043.0      0.265370     0.441561      0.000000      0.000000      0.000000      1.000000      1.000000        0
+Churn Score      7043.0     58.699418    21.525131      5.000000     40.000000     61.000000     75.000000    100.000000        0
+CLTV             7043.0   4400.295755  1183.057152   2003.000000   3469.000000   4527.000000   5380.500000   6500.000000        0
+2026-09-12 14:28:45,347 | INFO | Missing-value report: {'Churn Reason': {'count': 5174, 'percent': 73.46}}
+2026-09-12 14:28:45,353 | INFO | Total Charges missing after numeric conversion: 11
+2026-09-12 14:28:45,354 | INFO | Imputation notes: {'total_charges_converted': True, 'total_charges_blank_originally': 11, 'filled_with_zero_new_customers': 11, 'filled_with_median': 0, 'median_total_charges': 1394.55}
+2026-09-12 14:28:45,395 | INFO | Normalized columns: ['Tenure Months', 'Monthly Charges', 'Total Charges', 'CLTV']
+2026-09-12 14:28:45,397 | INFO | Data types:
+2026-09-12 14:28:45,398 | INFO |   CustomerID             str
+2026-09-12 14:28:45,398 | INFO |   Count                  int64
+2026-09-12 14:28:45,398 | INFO |   Country                str
+2026-09-12 14:28:45,398 | INFO |   State                  str
+2026-09-12 14:28:45,398 | INFO |   City                   str
+2026-09-12 14:28:45,398 | INFO |   Zip Code               int64
+2026-09-12 14:28:45,398 | INFO |   Lat Long               str
+2026-09-12 14:28:45,399 | INFO |   Latitude               float64
+2026-09-12 14:28:45,399 | INFO |   Longitude              float64
+2026-09-12 14:28:45,399 | INFO |   Gender                 str
+2026-09-12 14:28:45,399 | INFO |   Senior Citizen         str
+2026-09-12 14:28:45,399 | INFO |   Partner                str
+2026-09-12 14:28:45,399 | INFO |   Dependents             str
+2026-09-12 14:28:45,400 | INFO |   Tenure Months          int64
+2026-09-12 14:28:45,400 | INFO |   Phone Service          str
+2026-09-12 14:28:45,400 | INFO |   Multiple Lines         str
+2026-09-12 14:28:45,400 | INFO |   Internet Service       str
+2026-09-12 14:28:45,400 | INFO |   Online Security        str
+2026-09-12 14:28:45,400 | INFO |   Online Backup          str
+2026-09-12 14:28:45,401 | INFO |   Device Protection      str
+2026-09-12 14:28:45,401 | INFO |   Tech Support           str
+2026-09-12 14:28:45,401 | INFO |   Streaming TV           str
+2026-09-12 14:28:45,401 | INFO |   Streaming Movies       str
+2026-09-12 14:28:45,401 | INFO |   Contract               str
+2026-09-12 14:28:45,401 | INFO |   Paperless Billing      str
+2026-09-12 14:28:45,401 | INFO |   Payment Method         str
+2026-09-12 14:28:45,401 | INFO |   Monthly Charges        float64
+2026-09-12 14:28:45,402 | INFO |   Total Charges          float64
+2026-09-12 14:28:45,402 | INFO |   Churn Label            str
+2026-09-12 14:28:45,402 | INFO |   Churn Value            int64
+2026-09-12 14:28:45,402 | INFO |   Churn Score            int64
+2026-09-12 14:28:45,403 | INFO |   CLTV                   int64
+2026-09-12 14:28:45,403 | INFO |   Churn Reason           str
+2026-09-12 14:28:45,403 | INFO |   Tenure Months_scaled   float64
+2026-09-12 14:28:45,403 | INFO |   Monthly Charges_scaled float64
+2026-09-12 14:28:45,403 | INFO |   Total Charges_scaled   float64
+2026-09-12 14:28:45,403 | INFO |   CLTV_scaled            float64
+2026-09-12 14:28:45,410 | INFO | Missing-value report: {'Churn Reason': {'count': 5174, 'percent': 73.46}}
+2026-09-12 14:28:45,521 | INFO | Wrote processed dataset: C:\API_Assignment\telco-churn\data\processed\telco_preprocessed.csv
+2026-09-12 14:28:45,524 | INFO | Wrote preprocess report: C:\API_Assignment\telco-churn\reports\preprocess_report.json

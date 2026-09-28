@@ -1,0 +1,22 @@
+# Prefect 3 deployment file
+# Register with:  prefect deploy --all
+# Worker:         prefect worker start --pool local-process
+
+name: telco-churn
+prefect-version: 3.4.0
+
+deployments:
+  - name: telco-every-2-min
+    entrypoint: prefect/flows/telco_pipeline.py:telco_pipeline
+    description: Assignment 1.5 — preprocess + EDA every 2 minutes on a local worker
+    work_pool:
+      name: local-process
+      work_queue_name: default
+    schedules:
+      - interval: 120
+        timezone: Asia/Kolkata
+        active: true
+    tags:
+      - assignment
+      - telco
+      - group-40

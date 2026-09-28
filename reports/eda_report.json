@@ -1,0 +1,217 @@
+{
+  "step": "1.4_eda",
+  "run_utc": "2026-09-27T17:55:56.603385+00:00",
+  "n_rows": 7043,
+  "overall_churn_rate_pct": 26.54,
+  "correlation_with_churn_value": {
+    "Churn Value": 1.0,
+    "Churn Score": 0.6648970311816286,
+    "Monthly Charges": 0.19335642223784827,
+    "CLTV": -0.1274631017174544,
+    "Total Charges": -0.19832426260399458,
+    "Tenure Months": -0.352228670113079
+  },
+  "churn_rate_by_category": {
+    "Gender": {
+      "Female": 26.92,
+      "Male": 26.16
+    },
+    "Senior Citizen": {
+      "Yes": 41.68,
+      "No": 23.61
+    },
+    "Partner": {
+      "No": 32.96,
+      "Yes": 19.66
+    },
+    "Dependents": {
+      "No": 32.55,
+      "Yes": 6.52
+    },
+    "Phone Service": {
+      "Yes": 26.71,
+      "No": 24.93
+    },
+    "Multiple Lines": {
+      "Yes": 28.61,
+      "No": 25.04,
+      "No phone service": 24.93
+    },
+    "Internet Service": {
+      "Fiber optic": 41.89,
+      "DSL": 18.96,
+      "No": 7.4
+    },
+    "Online Security": {
+      "No": 41.77,
+      "Yes": 14.61,
+      "No internet service": 7.4
+    },
+    "Online Backup": {
+      "No": 39.93,
+      "Yes": 21.53,
+      "No internet service": 7.4
+    },
+    "Device Protection": {
+      "No": 39.13,
+      "Yes": 22.5,
+      "No internet service": 7.4
+    },
+    "Tech Support": {
+      "No": 41.64,
+      "Yes": 15.17,
+      "No internet service": 7.4
+    },
+    "Streaming TV": {
+      "No": 33.52,
+      "Yes": 30.07,
+      "No internet service": 7.4
+    },
+    "Streaming Movies": {
+      "No": 33.68,
+      "Yes": 29.94,
+      "No internet service": 7.4
+    },
+    "Contract": {
+      "Month-to-month": 42.71,
+      "One year": 11.27,
+      "Two year": 2.83
+    },
+    "Paperless Billing": {
+      "Yes": 33.57,
+      "No": 16.33
+    },
+    "Payment Method": {
+      "Electronic check": 45.29,
+      "Mailed check": 19.11,
+      "Bank transfer (automatic)": 16.71,
+      "Credit card (automatic)": 15.24
+    }
+  },
+  "churn_rate_by_tenure_bin": {
+    "0-12 months": 47.44,
+    "13-24 months": 28.71,
+    "25-48 months": 20.39,
+    "49-72 months": 9.51
+  },
+  "churn_rate_by_monthly_charge_bin": {
+    "Low": 11.24,
+    "Medium": 24.58,
+    "High": 37.51,
+    "Very High": 32.88
+  },
+  "label_encoding_maps": {
+    "Gender": {
+      "Female": 0,
+      "Male": 1
+    },
+    "Senior Citizen": {
+      "No": 0,
+      "Yes": 1
+    },
+    "Partner": {
+      "No": 0,
+      "Yes": 1
+    },
+    "Dependents": {
+      "No": 0,
+      "Yes": 1
+    },
+    "Phone Service": {
+      "No": 0,
+      "Yes": 1
+    },
+    "Multiple Lines": {
+      "No": 0,
+      "No phone service": 1,
+      "Yes": 2
+    },
+    "Internet Service": {
+      "DSL": 0,
+      "Fiber optic": 1,
+      "No": 2
+    },
+    "Online Security": {
+      "No": 0,
+      "No internet service": 1,
+      "Yes": 2
+    },
+    "Online Backup": {
+      "No": 0,
+      "No internet service": 1,
+      "Yes": 2
+    },
+    "Device Protection": {
+      "No": 0,
+      "No internet service": 1,
+      "Yes": 2
+    },
+    "Tech Support": {
+      "No": 0,
+      "No internet service": 1,
+      "Yes": 2
+    },
+    "Streaming TV": {
+      "No": 0,
+      "No internet service": 1,
+      "Yes": 2
+    },
+    "Streaming Movies": {
+      "No": 0,
+      "No internet service": 1,
+      "Yes": 2
+    },
+    "Contract": {
+      "Month-to-month": 0,
+      "One year": 1,
+      "Two year": 2
+    },
+    "Paperless Billing": {
+      "No": 0,
+      "Yes": 1
+    },
+    "Payment Method": {
+      "Bank transfer (automatic)": 0,
+      "Credit card (automatic)": 1,
+      "Electronic check": 2,
+      "Mailed check": 3
+    }
+  },
+  "feature_importance": {
+    "Total Charges": 0.136201,
+    "Monthly Charges": 0.129682,
+    "Tenure Months": 0.127071,
+    "CLTV": 0.116442,
+    "Contract_encoded": 0.111604,
+    "Online Security_encoded": 0.056007,
+    "Dependents_encoded": 0.047416,
+    "Tech Support_encoded": 0.044034,
+    "Payment Method_encoded": 0.039245,
+    "Internet Service_encoded": 0.025706,
+    "Online Backup_encoded": 0.02262,
+    "Gender_encoded": 0.020266,
+    "Device Protection_encoded": 0.019989,
+    "Paperless Billing_encoded": 0.019764,
+    "Partner_encoded": 0.018582,
+    "Multiple Lines_encoded": 0.017386,
+    "Senior Citizen_encoded": 0.01487,
+    "Streaming Movies_encoded": 0.01456,
+    "Streaming TV_encoded": 0.013916,
+    "Phone Service_encoded": 0.004637
+  },
+  "plots": [
+    "01_correlation_heatmap.png",
+    "02_feature_importance.png",
+    "03_univariate_churn_count.png",
+    "04_univariate_tenure.png",
+    "05_univariate_monthly_charges.png",
+    "06_univariate_contract.png",
+    "07_bivariate_tenure_vs_churn.png",
+    "08_bivariate_charges_vs_churn.png",
+    "09_bivariate_churn_by_contract.png",
+    "10_bivariate_churn_by_internet.png",
+    "11_bivariate_churn_by_payment.png",
+    "12_bivariate_churn_by_tenure_bin.png",
+    "13_churn_reasons.png"
+  ]
+}

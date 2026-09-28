@@ -1,0 +1,21 @@
+CustomerID,Churn Value,Contract_Month-to-month,Contract_One year,Contract_Two year,Internet Service_DSL,Internet Service_Fiber optic,Internet Service_No,Payment Method_Bank transfer (automatic),Payment Method_Credit card (automatic),Payment Method_Electronic check,Payment Method_Mailed check
+3668-QPYBK,1,True,False,False,True,False,False,False,False,False,True
+9237-HQITU,1,True,False,False,False,True,False,False,False,True,False
+9305-CDSKC,1,True,False,False,False,True,False,False,False,True,False
+7892-POOKP,1,True,False,False,False,True,False,False,False,True,False
+0280-XJGEX,1,True,False,False,False,True,False,True,False,False,False
+4190-MFLUW,1,True,False,False,True,False,False,False,True,False,False
+8779-QRDMV,1,True,False,False,True,False,False,False,False,True,False
+1066-JKSGK,1,True,False,False,False,False,True,False,False,False,True
+6467-CHFZW,1,True,False,False,False,True,False,False,False,True,False
+8665-UTDHZ,1,True,False,False,True,False,False,False,False,True,False
+8773-HHUOZ,1,True,False,False,True,False,False,False,False,False,True
+6047-YHPVI,1,True,False,False,False,True,False,False,False,True,False
+5380-WJKOV,1,True,False,False,False,True,False,False,False,True,False
+8168-UQWWF,1,True,False,False,False,True,False,True,False,False,False
+7760-OYPDY,1,True,False,False,False,True,False,False,False,True,False
+9420-LOJKX,1,True,False,False,False,True,False,False,True,False,False
+7495-OOKFY,1,True,False,False,False,True,False,False,True,False,False
+1658-BYGOY,1,True,False,False,False,True,False,False,False,True,False
+5698-BQJOH,1,True,False,False,False,True,False,False,False,True,False
+5919-TMRGD,1,True,False,False,False,True,False,False,False,True,False

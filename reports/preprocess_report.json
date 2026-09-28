@@ -1,0 +1,224 @@
+{
+  "step": "1.3_preprocess",
+  "run_utc": "2026-09-27T17:55:50.831059+00:00",
+  "raw_path": "C:\\API_Assignment\\telco-churn\\data\\raw\\Telco_customer_churn.xlsx",
+  "n_rows": 7043,
+  "n_cols_after": 37,
+  "dtypes_before": {
+    "CustomerID": "str",
+    "Count": "int64",
+    "Country": "str",
+    "State": "str",
+    "City": "str",
+    "Zip Code": "int64",
+    "Lat Long": "str",
+    "Latitude": "float64",
+    "Longitude": "float64",
+    "Gender": "str",
+    "Senior Citizen": "str",
+    "Partner": "str",
+    "Dependents": "str",
+    "Tenure Months": "int64",
+    "Phone Service": "str",
+    "Multiple Lines": "str",
+    "Internet Service": "str",
+    "Online Security": "str",
+    "Online Backup": "str",
+    "Device Protection": "str",
+    "Tech Support": "str",
+    "Streaming TV": "str",
+    "Streaming Movies": "str",
+    "Contract": "str",
+    "Paperless Billing": "str",
+    "Payment Method": "str",
+    "Monthly Charges": "float64",
+    "Total Charges": "object",
+    "Churn Label": "str",
+    "Churn Value": "int64",
+    "Churn Score": "int64",
+    "CLTV": "int64",
+    "Churn Reason": "str"
+  },
+  "dtypes_after": {
+    "CustomerID": "str",
+    "Count": "int64",
+    "Country": "str",
+    "State": "str",
+    "City": "str",
+    "Zip Code": "int64",
+    "Lat Long": "str",
+    "Latitude": "float64",
+    "Longitude": "float64",
+    "Gender": "str",
+    "Senior Citizen": "str",
+    "Partner": "str",
+    "Dependents": "str",
+    "Tenure Months": "int64",
+    "Phone Service": "str",
+    "Multiple Lines": "str",
+    "Internet Service": "str",
+    "Online Security": "str",
+    "Online Backup": "str",
+    "Device Protection": "str",
+    "Tech Support": "str",
+    "Streaming TV": "str",
+    "Streaming Movies": "str",
+    "Contract": "str",
+    "Paperless Billing": "str",
+    "Payment Method": "str",
+    "Monthly Charges": "float64",
+    "Total Charges": "float64",
+    "Churn Label": "str",
+    "Churn Value": "int64",
+    "Churn Score": "int64",
+    "CLTV": "int64",
+    "Churn Reason": "str",
+    "Tenure Months_scaled": "float64",
+    "Monthly Charges_scaled": "float64",
+    "Total Charges_scaled": "float64",
+    "CLTV_scaled": "float64"
+  },
+  "summary_statistics_before": {
+    "Count": {
+      "count": 7043.0,
+      "mean": 1.0,
+      "std": 0.0,
+      "min": 1.0,
+      "25%": 1.0,
+      "50%": 1.0,
+      "75%": 1.0,
+      "max": 1.0,
+      "missing": 0
+    },
+    "Zip Code": {
+      "count": 7043.0,
+      "mean": 93521.9646457475,
+      "std": 1865.7945553966,
+      "min": 90001.0,
+      "25%": 92102.0,
+      "50%": 93552.0,
+      "75%": 95351.0,
+      "max": 96161.0,
+      "missing": 0
+    },
+    "Latitude": {
+      "count": 7043.0,
+      "mean": 36.2824413811,
+      "std": 2.4557225896,
+      "min": 32.555828,
+      "25%": 34.030915,
+      "50%": 36.391777,
+      "75%": 38.224869,
+      "max": 41.962127,
+      "missing": 0
+    },
+    "Longitude": {
+      "count": 7043.0,
+      "mean": -119.7988800812,
+      "std": 2.1578890953,
+      "min": -124.301372,
+      "25%": -121.815412,
+      "50%": -119.730885,
+      "75%": -118.043237,
+      "max": -114.192901,
+      "missing": 0
+    },
+    "Tenure Months": {
+      "count": 7043.0,
+      "mean": 32.3711486582,
+      "std": 24.5594810231,
+      "min": 0.0,
+      "25%": 9.0,
+      "50%": 29.0,
+      "75%": 55.0,
+      "max": 72.0,
+      "missing": 0
+    },
+    "Monthly Charges": {
+      "count": 7043.0,
+      "mean": 64.7616924606,
+      "std": 30.0900470977,
+      "min": 18.25,
+      "25%": 35.5,
+      "50%": 70.35,
+      "75%": 89.85,
+      "max": 118.75,
+      "missing": 0
+    },
+    "Churn Value": {
+      "count": 7043.0,
+      "mean": 0.2653698708,
+      "std": 0.4415613051,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 0.0,
+      "75%": 1.0,
+      "max": 1.0,
+      "missing": 0
+    },
+    "Churn Score": {
+      "count": 7043.0,
+      "mean": 58.6994178617,
+      "std": 21.5251306785,
+      "min": 5.0,
+      "25%": 40.0,
+      "50%": 61.0,
+      "75%": 75.0,
+      "max": 100.0,
+      "missing": 0
+    },
+    "CLTV": {
+      "count": 7043.0,
+      "mean": 4400.29575465,
+      "std": 1183.0571519525,
+      "min": 2003.0,
+      "25%": 3469.0,
+      "50%": 4527.0,
+      "75%": 5380.5,
+      "max": 6500.0,
+      "missing": 0
+    }
+  },
+  "missing_before": {
+    "Churn Reason": {
+      "count": 5174,
+      "percent": 73.46
+    }
+  },
+  "missing_after": {
+    "Churn Reason": {
+      "count": 5174,
+      "percent": 73.46
+    }
+  },
+  "imputation": {
+    "total_charges_converted": true,
+    "total_charges_blank_originally": 11,
+    "filled_with_zero_new_customers": 11,
+    "filled_with_median": 0,
+    "median_total_charges": 1394.55
+  },
+  "normalization": {
+    "Tenure Months": {
+      "min": 0.0,
+      "max": 72.0
+    },
+    "Monthly Charges": {
+      "min": 18.25,
+      "max": 118.75
+    },
+    "Total Charges": {
+      "min": 0.0,
+      "max": 8684.8
+    },
+    "CLTV": {
+      "min": 2003.0,
+      "max": 6500.0
+    }
+  },
+  "processed_csv": "C:\\API_Assignment\\telco-churn\\data\\processed\\telco_preprocessed.csv",
+  "churn_counts": {
+    "No": 5174,
+    "Yes": 1869
+  }
+}
